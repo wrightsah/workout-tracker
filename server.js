@@ -23,8 +23,8 @@ app.use(express.json());
 // file requirements - public, api, html
 
 app.use(express.static("public"));
-app.use(require("./routes/apiRoutes"));
-app.use(require("./routes/htmlRoutes"));
+// app.use(require("./routes/api"));
+app.use(require("./routes/html"));
 
 // server listener
 
