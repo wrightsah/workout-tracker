@@ -6,15 +6,23 @@ const mongojs = require('mongojs');
 
 const express = require('express');
 
-// initialize server on PORT 3000
+// require mongoose 
+
+const mongoose = require('mongoose');
+
+// initialize server on PORT 3001
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3001;
 
-// db here
+// body parser middleware
+
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
+
+// file requirements - public, api, html
 
 
-// routes
 
 
 // server listener
